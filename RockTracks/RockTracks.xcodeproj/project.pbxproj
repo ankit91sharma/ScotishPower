@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		BA32344F2DC69A52007E6927 /* RockTracksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32344E2DC69A52007E6927 /* RockTracksApp.swift */; };
-		BA3234512DC69A52007E6927 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234502DC69A52007E6927 /* ContentView.swift */; };
+		BA3234512DC69A52007E6927 /* RockAppListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234502DC69A52007E6927 /* RockAppListingView.swift */; };
 		BA3234532DC69A54007E6927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3234522DC69A54007E6927 /* Assets.xcassets */; };
 		BA3234572DC69A54007E6927 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3234562DC69A54007E6927 /* Preview Assets.xcassets */; };
 		BA3234612DC69A54007E6927 /* RockTracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234602DC69A54007E6927 /* RockTracksTests.swift */; };
 		BA32346B2DC69A54007E6927 /* RockTracksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32346A2DC69A54007E6927 /* RockTracksUITests.swift */; };
 		BA32346D2DC69A54007E6927 /* RockTracksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32346C2DC69A54007E6927 /* RockTracksUITestsLaunchTests.swift */; };
+		BA32347F2DC69D6C007E6927 /* RockAppListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32347E2DC69D6C007E6927 /* RockAppListingViewModel.swift */; };
+		BA3234822DC6A667007E6927 /* RockAppListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234812DC6A667007E6927 /* RockAppListingService.swift */; };
+		BA3234852DC6A7E9007E6927 /* RockAppListingApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234842DC6A7E9007E6927 /* RockAppListingApiResponse.swift */; };
+		BA3234882DC6AD45007E6927 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234872DC6AD45007E6927 /* NetworkManager.swift */; };
+		BA32348A2DC6ADAD007E6927 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234892DC6ADAD007E6927 /* Requests.swift */; };
+		BA32348C2DC6AE41007E6927 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32348B2DC6AE41007E6927 /* Parser.swift */; };
+		BA32348E2DC6AFD4007E6927 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32348D2DC6AFD4007E6927 /* NetworkError.swift */; };
+		BA3234902DC6B38A007E6927 /* RockTrackRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32348F2DC6B38A007E6927 /* RockTrackRequest.swift */; };
+		BA90F01A2DC80CA8002E803A /* RockAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F0192DC80CA8002E803A /* RockAppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,7 @@
 /* Begin PBXFileReference section */
 		BA32344B2DC69A52007E6927 /* RockTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA32344E2DC69A52007E6927 /* RockTracksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTracksApp.swift; sourceTree = "<group>"; };
-		BA3234502DC69A52007E6927 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA3234502DC69A52007E6927 /* RockAppListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppListingView.swift; sourceTree = "<group>"; };
 		BA3234522DC69A54007E6927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA3234542DC69A54007E6927 /* RockTracks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RockTracks.entitlements; sourceTree = "<group>"; };
 		BA3234562DC69A54007E6927 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +54,15 @@
 		BA3234662DC69A54007E6927 /* RockTracksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockTracksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA32346A2DC69A54007E6927 /* RockTracksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTracksUITests.swift; sourceTree = "<group>"; };
 		BA32346C2DC69A54007E6927 /* RockTracksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTracksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BA32347E2DC69D6C007E6927 /* RockAppListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppListingViewModel.swift; sourceTree = "<group>"; };
+		BA3234812DC6A667007E6927 /* RockAppListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppListingService.swift; sourceTree = "<group>"; };
+		BA3234842DC6A7E9007E6927 /* RockAppListingApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppListingApiResponse.swift; sourceTree = "<group>"; };
+		BA3234872DC6AD45007E6927 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BA3234892DC6ADAD007E6927 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		BA32348B2DC6AE41007E6927 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		BA32348D2DC6AFD4007E6927 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BA32348F2DC6B38A007E6927 /* RockTrackRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTrackRequest.swift; sourceTree = "<group>"; };
+		BA90F0192DC80CA8002E803A /* RockAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +113,9 @@
 		BA32344D2DC69A52007E6927 /* RockTracks */ = {
 			isa = PBXGroup;
 			children = (
+				BA3234862DC6AD1D007E6927 /* Networking */,
+				BA32347C2DC69CFF007E6927 /* RockAppListing */,
 				BA32344E2DC69A52007E6927 /* RockTracksApp.swift */,
-				BA3234502DC69A52007E6927 /* ContentView.swift */,
 				BA3234522DC69A54007E6927 /* Assets.xcassets */,
 				BA3234542DC69A54007E6927 /* RockTracks.entitlements */,
 				BA3234552DC69A54007E6927 /* Preview Content */,
@@ -127,6 +146,55 @@
 				BA32346C2DC69A54007E6927 /* RockTracksUITestsLaunchTests.swift */,
 			);
 			path = RockTracksUITests;
+			sourceTree = "<group>";
+		};
+		BA32347C2DC69CFF007E6927 /* RockAppListing */ = {
+			isa = PBXGroup;
+			children = (
+				BA3234832DC6A7C4007E6927 /* Models */,
+				BA3234802DC6A64A007E6927 /* Manager */,
+				BA32347D2DC69D54007E6927 /* ViewModel */,
+				BA3234502DC69A52007E6927 /* RockAppListingView.swift */,
+			);
+			path = RockAppListing;
+			sourceTree = "<group>";
+		};
+		BA32347D2DC69D54007E6927 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA32347E2DC69D6C007E6927 /* RockAppListingViewModel.swift */,
+			);
+			name = ViewModel;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		BA3234802DC6A64A007E6927 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BA3234812DC6A667007E6927 /* RockAppListingService.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BA3234832DC6A7C4007E6927 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA3234842DC6A7E9007E6927 /* RockAppListingApiResponse.swift */,
+				BA32348F2DC6B38A007E6927 /* RockTrackRequest.swift */,
+				BA90F0192DC80CA8002E803A /* RockAppState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA3234862DC6AD1D007E6927 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BA3234872DC6AD45007E6927 /* NetworkManager.swift */,
+				BA32348D2DC6AFD4007E6927 /* NetworkError.swift */,
+				BA3234892DC6ADAD007E6927 /* Requests.swift */,
+				BA32348B2DC6AE41007E6927 /* Parser.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +327,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3234512DC69A52007E6927 /* ContentView.swift in Sources */,
+				BA3234882DC6AD45007E6927 /* NetworkManager.swift in Sources */,
+				BA3234852DC6A7E9007E6927 /* RockAppListingApiResponse.swift in Sources */,
+				BA3234512DC69A52007E6927 /* RockAppListingView.swift in Sources */,
+				BA32347F2DC69D6C007E6927 /* RockAppListingViewModel.swift in Sources */,
+				BA3234902DC6B38A007E6927 /* RockTrackRequest.swift in Sources */,
+				BA90F01A2DC80CA8002E803A /* RockAppState.swift in Sources */,
+				BA32348C2DC6AE41007E6927 /* Parser.swift in Sources */,
 				BA32344F2DC69A52007E6927 /* RockTracksApp.swift in Sources */,
+				BA32348E2DC6AFD4007E6927 /* NetworkError.swift in Sources */,
+				BA32348A2DC6ADAD007E6927 /* Requests.swift in Sources */,
+				BA3234822DC6A667007E6927 /* RockAppListingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +517,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = scottishpower.com.apple.RockTracks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -476,7 +554,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = scottishpower.com.apple.RockTracks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
