@@ -8,7 +8,9 @@
 import Foundation
 
 final class RockAppListingViewModel: ObservableObject {
+    
     @Published private(set) var state: RockAppState = .loading
+    @Published private(set) var tracks: [RockTrackScreenDataModel] = []
     
     private let service: RockAppListingProviding
     
@@ -25,11 +27,25 @@ extension RockAppListingViewModel {
         state = .loading
         do {
             let request = RockTrackRequest(type: "rock")
-            _ = try await service.getTracks(request: request)
+            let response = try await service.getTracks(request: request)
+            handleResponse(response: response)
             state = .loaded
         } catch {
             state = .error
             // TODO: handle error
         }
+    }
+    
+    private func handleResponse(response: RockAppListingApiResponse?) {
+        guard let results = response?.results else {
+            return
+        }
+        let sortedTracks = results.sorted { $0.date ?? Date() > $1.date ?? Date() }
+        let tracks: [RockTrackScreenDataModel] = sortedTracks.compactMap { .init(id: $0.trackId ?? 0,
+                                                                           trackName: $0.trackName,
+                                                                           artistName: $0.artistName,
+                                                                           price: $0.formattedTrackPrice,
+                                                                           image: $0.artworkUrl60)}
+        self.tracks = tracks
     }
 }

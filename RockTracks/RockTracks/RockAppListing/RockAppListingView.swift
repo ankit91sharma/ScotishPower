@@ -13,7 +13,7 @@ struct RockAppListingView: View {
     private let navigationTitle = "Rock Tracks"
         
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack {
                 switch viewModel.state {
                 case .loaded:
@@ -26,6 +26,7 @@ struct RockAppListingView: View {
                 }
             }
             .navigationTitle(navigationTitle)
+            .navigationBarTitleDisplayMode(.inline)
         }
         .task {
             await viewModel.fetchTracks()
@@ -36,9 +37,44 @@ struct RockAppListingView: View {
 private extension RockAppListingView {
     
     var loadedView: some View {
-        VStack {
-            Text("Hello")
+        List(viewModel.tracks) { track in
+            ZStack {
+                HStack(spacing: 16) {
+                        AsyncImage(url: track.artworkURL) { item in
+                            if let image = item.image {
+                                image
+                                    .frame(width: 50, height: 50)
+                                    .scaledToFill()
+                            } else {
+                                Image(systemName: "photo")
+                                    .frame(width: 50, height: 50)
+                            }
+                        }
+                        VStack(spacing: 4) {
+                            Text(track.displayTrackName)
+                                .font(.headline)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            Text(track.displayArtistName)
+                                .font(.body)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .foregroundColor(.gray)
+                            Text(track.displayPrice)
+                                .font(.body)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .foregroundColor(.gray)
+                        }
+                    }
+                    .padding()
+                    .overlay(content: {
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.gray, lineWidth: 1)
+                    })
+                NavigationLink(destination: DetailView()) { }
+                    .opacity(0)
+            }
+            .listRowSeparator(.hidden)
         }
+        .listStyle(.plain)
     }
     
     var errorView: some View {

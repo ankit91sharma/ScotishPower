@@ -23,6 +23,10 @@
 		BA32348E2DC6AFD4007E6927 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32348D2DC6AFD4007E6927 /* NetworkError.swift */; };
 		BA3234902DC6B38A007E6927 /* RockTrackRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32348F2DC6B38A007E6927 /* RockTrackRequest.swift */; };
 		BA90F01A2DC80CA8002E803A /* RockAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F0192DC80CA8002E803A /* RockAppState.swift */; };
+		BA90F01C2DC8145B002E803A /* RockTrackScreenDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F01B2DC8145B002E803A /* RockTrackScreenDataModel.swift */; };
+		BA90F0202DCAA6F2002E803A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F01F2DCAA6F2002E803A /* DetailView.swift */; };
+		BA90F0232DCAA751002E803A /* DateFormatter+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F0222DCAA751002E803A /* DateFormatter+String.swift */; };
+		BA90F0252DCAA9FB002E803A /* NumberFormatter+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F0242DCAA9FB002E803A /* NumberFormatter+Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		BA32348D2DC6AFD4007E6927 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		BA32348F2DC6B38A007E6927 /* RockTrackRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTrackRequest.swift; sourceTree = "<group>"; };
 		BA90F0192DC80CA8002E803A /* RockAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppState.swift; sourceTree = "<group>"; };
+		BA90F01B2DC8145B002E803A /* RockTrackScreenDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTrackScreenDataModel.swift; sourceTree = "<group>"; };
+		BA90F01F2DCAA6F2002E803A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BA90F0222DCAA751002E803A /* DateFormatter+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+String.swift"; sourceTree = "<group>"; };
+		BA90F0242DCAA9FB002E803A /* NumberFormatter+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Double.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +121,8 @@
 		BA32344D2DC69A52007E6927 /* RockTracks */ = {
 			isa = PBXGroup;
 			children = (
+				BA90F0212DCAA739002E803A /* Utilities */,
+				BA90F01D2DCAA687002E803A /* Detail */,
 				BA3234862DC6AD1D007E6927 /* Networking */,
 				BA32347C2DC69CFF007E6927 /* RockAppListing */,
 				BA32344E2DC69A52007E6927 /* RockTracksApp.swift */,
@@ -152,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				BA3234832DC6A7C4007E6927 /* Models */,
-				BA3234802DC6A64A007E6927 /* Manager */,
+				BA3234802DC6A64A007E6927 /* Service */,
 				BA32347D2DC69D54007E6927 /* ViewModel */,
 				BA3234502DC69A52007E6927 /* RockAppListingView.swift */,
 			);
@@ -168,12 +178,12 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		BA3234802DC6A64A007E6927 /* Manager */ = {
+		BA3234802DC6A64A007E6927 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				BA3234812DC6A667007E6927 /* RockAppListingService.swift */,
 			);
-			path = Manager;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		BA3234832DC6A7C4007E6927 /* Models */ = {
@@ -182,6 +192,7 @@
 				BA3234842DC6A7E9007E6927 /* RockAppListingApiResponse.swift */,
 				BA32348F2DC6B38A007E6927 /* RockTrackRequest.swift */,
 				BA90F0192DC80CA8002E803A /* RockAppState.swift */,
+				BA90F01B2DC8145B002E803A /* RockTrackScreenDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +206,31 @@
 				BA32348B2DC6AE41007E6927 /* Parser.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		BA90F01D2DCAA687002E803A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BA90F01E2DCAA6A9002E803A /* DetailView */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BA90F01E2DCAA6A9002E803A /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				BA90F01F2DCAA6F2002E803A /* DetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		BA90F0212DCAA739002E803A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BA90F0222DCAA751002E803A /* DateFormatter+String.swift */,
+				BA90F0242DCAA9FB002E803A /* NumberFormatter+Double.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,12 +365,16 @@
 			files = (
 				BA3234882DC6AD45007E6927 /* NetworkManager.swift in Sources */,
 				BA3234852DC6A7E9007E6927 /* RockAppListingApiResponse.swift in Sources */,
+				BA90F0252DCAA9FB002E803A /* NumberFormatter+Double.swift in Sources */,
 				BA3234512DC69A52007E6927 /* RockAppListingView.swift in Sources */,
 				BA32347F2DC69D6C007E6927 /* RockAppListingViewModel.swift in Sources */,
 				BA3234902DC6B38A007E6927 /* RockTrackRequest.swift in Sources */,
 				BA90F01A2DC80CA8002E803A /* RockAppState.swift in Sources */,
 				BA32348C2DC6AE41007E6927 /* Parser.swift in Sources */,
+				BA90F0202DCAA6F2002E803A /* DetailView.swift in Sources */,
 				BA32344F2DC69A52007E6927 /* RockTracksApp.swift in Sources */,
+				BA90F01C2DC8145B002E803A /* RockTrackScreenDataModel.swift in Sources */,
+				BA90F0232DCAA751002E803A /* DateFormatter+String.swift in Sources */,
 				BA32348E2DC6AFD4007E6927 /* NetworkError.swift in Sources */,
 				BA32348A2DC6ADAD007E6927 /* Requests.swift in Sources */,
 				BA3234822DC6A667007E6927 /* RockAppListingService.swift in Sources */,
@@ -426,6 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -481,6 +522,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -509,7 +551,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.7;
@@ -546,7 +588,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.7;

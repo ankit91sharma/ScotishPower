@@ -23,10 +23,21 @@ struct RockAppListingApiResponse: Codable {
         let collectionName: String?
         let trackName: String?
         let collectionPrice: Decimal?
-        let trackPrice: Decimal?
+        let trackPrice: Double?
         let currency: String?
         let artworkUrl30: String?
         let artworkUrl60: String?
         let artworkUrl100: String?
+        let releaseDate: String?
+        
+        var date: Date? {
+            releaseDate?.getUTCDate()
+        }
+        
+        var formattedTrackPrice: String? {
+            guard let price = trackPrice, let currency = currency else { return nil }
+            return price.getformatted(for: currency)
+        }
     }
 }
+
