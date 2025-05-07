@@ -11,7 +11,8 @@ import SwiftUI
 struct RockTracksApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = RockAppListingViewModel(service: RockAppListingService())
+            RockAppListingView(viewModel: viewModel)
         }
     }
 }

@@ -8,12 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		BA32344F2DC69A52007E6927 /* RockTracksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32344E2DC69A52007E6927 /* RockTracksApp.swift */; };
-		BA3234512DC69A52007E6927 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234502DC69A52007E6927 /* ContentView.swift */; };
+		BA3234512DC69A52007E6927 /* RockAppListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234502DC69A52007E6927 /* RockAppListingView.swift */; };
 		BA3234532DC69A54007E6927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3234522DC69A54007E6927 /* Assets.xcassets */; };
 		BA3234572DC69A54007E6927 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3234562DC69A54007E6927 /* Preview Assets.xcassets */; };
-		BA3234612DC69A54007E6927 /* RockTracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234602DC69A54007E6927 /* RockTracksTests.swift */; };
 		BA32346B2DC69A54007E6927 /* RockTracksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32346A2DC69A54007E6927 /* RockTracksUITests.swift */; };
 		BA32346D2DC69A54007E6927 /* RockTracksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32346C2DC69A54007E6927 /* RockTracksUITestsLaunchTests.swift */; };
+		BA32347F2DC69D6C007E6927 /* RockAppListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32347E2DC69D6C007E6927 /* RockAppListingViewModel.swift */; };
+		BA3234822DC6A667007E6927 /* RockAppListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234812DC6A667007E6927 /* RockAppListingService.swift */; };
+		BA3234852DC6A7E9007E6927 /* RockAppListingApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234842DC6A7E9007E6927 /* RockAppListingApiResponse.swift */; };
+		BA3234882DC6AD45007E6927 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234872DC6AD45007E6927 /* NetworkManager.swift */; };
+		BA32348A2DC6ADAD007E6927 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3234892DC6ADAD007E6927 /* Requests.swift */; };
+		BA32348C2DC6AE41007E6927 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32348B2DC6AE41007E6927 /* Parser.swift */; };
+		BA32348E2DC6AFD4007E6927 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32348D2DC6AFD4007E6927 /* NetworkError.swift */; };
+		BA3234902DC6B38A007E6927 /* RockTrackRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA32348F2DC6B38A007E6927 /* RockTrackRequest.swift */; };
+		BA63FB992DCC1D45003557BF /* NetworkManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63FB982DCC1D45003557BF /* NetworkManagerMock.swift */; };
+		BA63FB9C2DCC1E6D003557BF /* RockAppListingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63FB9B2DCC1E6D003557BF /* RockAppListingServiceTests.swift */; };
+		BA63FB9F2DCC20F2003557BF /* RockAppListingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63FB9E2DCC20F2003557BF /* RockAppListingViewModelTests.swift */; };
+		BA90F01A2DC80CA8002E803A /* RockAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F0192DC80CA8002E803A /* RockAppState.swift */; };
+		BA90F01C2DC8145B002E803A /* RockTrackScreenDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F01B2DC8145B002E803A /* RockTrackScreenDataModel.swift */; };
+		BA90F0202DCAA6F2002E803A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F01F2DCAA6F2002E803A /* DetailView.swift */; };
+		BA90F0232DCAA751002E803A /* DateFormatter+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F0222DCAA751002E803A /* DateFormatter+String.swift */; };
+		BA90F0252DCAA9FB002E803A /* NumberFormatter+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F0242DCAA9FB002E803A /* NumberFormatter+Double.swift */; };
+		BA93362C2DCC00AF00514381 /* StringFormat+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93362B2DCC00AF00514381 /* StringFormat+Date.swift */; };
+		BA93362F2DCC049100514381 /* DateFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93362E2DCC049100514381 /* DateFormatTests.swift */; };
+		BA9336312DCC06EF00514381 /* StringFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9336302DCC06EF00514381 /* StringFormatTests.swift */; };
+		BA9336332DCC097600514381 /* NumberFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9336322DCC097600514381 /* NumberFormatterTests.swift */; };
+		BA9336352DCC0A4D00514381 /* RockTracks.json in Resources */ = {isa = PBXBuildFile; fileRef = BA9336342DCC0A4D00514381 /* RockTracks.json */; };
+		BA9336382DCC0AD400514381 /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9336372DCC0AD400514381 /* JsonReader.swift */; };
+		BA93363D2DCC0BF700514381 /* RockTrackResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93363C2DCC0BF700514381 /* RockTrackResponseTests.swift */; };
+		BA9336412DCC145700514381 /* RockTrackRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9336402DCC145700514381 /* RockTrackRequestTests.swift */; };
+		BA9336432DCC151400514381 /* RockTrackScreenDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9336422DCC151400514381 /* RockTrackScreenDataModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +60,39 @@
 /* Begin PBXFileReference section */
 		BA32344B2DC69A52007E6927 /* RockTracks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockTracks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA32344E2DC69A52007E6927 /* RockTracksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTracksApp.swift; sourceTree = "<group>"; };
-		BA3234502DC69A52007E6927 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA3234502DC69A52007E6927 /* RockAppListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppListingView.swift; sourceTree = "<group>"; };
 		BA3234522DC69A54007E6927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA3234542DC69A54007E6927 /* RockTracks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RockTracks.entitlements; sourceTree = "<group>"; };
 		BA3234562DC69A54007E6927 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA32345C2DC69A54007E6927 /* RockTracksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockTracksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA3234602DC69A54007E6927 /* RockTracksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTracksTests.swift; sourceTree = "<group>"; };
 		BA3234662DC69A54007E6927 /* RockTracksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockTracksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA32346A2DC69A54007E6927 /* RockTracksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTracksUITests.swift; sourceTree = "<group>"; };
 		BA32346C2DC69A54007E6927 /* RockTracksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTracksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BA32347E2DC69D6C007E6927 /* RockAppListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppListingViewModel.swift; sourceTree = "<group>"; };
+		BA3234812DC6A667007E6927 /* RockAppListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppListingService.swift; sourceTree = "<group>"; };
+		BA3234842DC6A7E9007E6927 /* RockAppListingApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppListingApiResponse.swift; sourceTree = "<group>"; };
+		BA3234872DC6AD45007E6927 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BA3234892DC6ADAD007E6927 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		BA32348B2DC6AE41007E6927 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		BA32348D2DC6AFD4007E6927 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BA32348F2DC6B38A007E6927 /* RockTrackRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTrackRequest.swift; sourceTree = "<group>"; };
+		BA63FB982DCC1D45003557BF /* NetworkManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
+		BA63FB9B2DCC1E6D003557BF /* RockAppListingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppListingServiceTests.swift; sourceTree = "<group>"; };
+		BA63FB9E2DCC20F2003557BF /* RockAppListingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppListingViewModelTests.swift; sourceTree = "<group>"; };
+		BA90F0192DC80CA8002E803A /* RockAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAppState.swift; sourceTree = "<group>"; };
+		BA90F01B2DC8145B002E803A /* RockTrackScreenDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTrackScreenDataModel.swift; sourceTree = "<group>"; };
+		BA90F01F2DCAA6F2002E803A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BA90F0222DCAA751002E803A /* DateFormatter+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+String.swift"; sourceTree = "<group>"; };
+		BA90F0242DCAA9FB002E803A /* NumberFormatter+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Double.swift"; sourceTree = "<group>"; };
+		BA93362B2DCC00AF00514381 /* StringFormat+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringFormat+Date.swift"; sourceTree = "<group>"; };
+		BA93362E2DCC049100514381 /* DateFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatTests.swift; sourceTree = "<group>"; };
+		BA9336302DCC06EF00514381 /* StringFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFormatTests.swift; sourceTree = "<group>"; };
+		BA9336322DCC097600514381 /* NumberFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterTests.swift; sourceTree = "<group>"; };
+		BA9336342DCC0A4D00514381 /* RockTracks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RockTracks.json; sourceTree = "<group>"; };
+		BA9336372DCC0AD400514381 /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
+		BA93363C2DCC0BF700514381 /* RockTrackResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTrackResponseTests.swift; sourceTree = "<group>"; };
+		BA9336402DCC145700514381 /* RockTrackRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTrackRequestTests.swift; sourceTree = "<group>"; };
+		BA9336422DCC151400514381 /* RockTrackScreenDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockTrackScreenDataModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +143,11 @@
 		BA32344D2DC69A52007E6927 /* RockTracks */ = {
 			isa = PBXGroup;
 			children = (
+				BA90F0212DCAA739002E803A /* Utilities */,
+				BA90F01D2DCAA687002E803A /* Detail */,
+				BA3234862DC6AD1D007E6927 /* Networking */,
+				BA32347C2DC69CFF007E6927 /* RockAppListing */,
 				BA32344E2DC69A52007E6927 /* RockTracksApp.swift */,
-				BA3234502DC69A52007E6927 /* ContentView.swift */,
 				BA3234522DC69A54007E6927 /* Assets.xcassets */,
 				BA3234542DC69A54007E6927 /* RockTracks.entitlements */,
 				BA3234552DC69A54007E6927 /* Preview Content */,
@@ -115,7 +166,12 @@
 		BA32345F2DC69A54007E6927 /* RockTracksTests */ = {
 			isa = PBXGroup;
 			children = (
-				BA3234602DC69A54007E6927 /* RockTracksTests.swift */,
+				BA63FB972DCC1D1F003557BF /* Mocks */,
+				BA63FB9D2DCC20DA003557BF /* ViewModel */,
+				BA63FB9A2DCC1E13003557BF /* Service */,
+				BA93363B2DCC0B9800514381 /* Model */,
+				BA9336362DCC0A9200514381 /* Helper */,
+				BA93362D2DCC044700514381 /* Utillities */,
 			);
 			path = RockTracksTests;
 			sourceTree = "<group>";
@@ -127,6 +183,135 @@
 				BA32346C2DC69A54007E6927 /* RockTracksUITestsLaunchTests.swift */,
 			);
 			path = RockTracksUITests;
+			sourceTree = "<group>";
+		};
+		BA32347C2DC69CFF007E6927 /* RockAppListing */ = {
+			isa = PBXGroup;
+			children = (
+				BA3234832DC6A7C4007E6927 /* Models */,
+				BA3234802DC6A64A007E6927 /* Service */,
+				BA32347D2DC69D54007E6927 /* ViewModel */,
+				BA3234502DC69A52007E6927 /* RockAppListingView.swift */,
+			);
+			path = RockAppListing;
+			sourceTree = "<group>";
+		};
+		BA32347D2DC69D54007E6927 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA32347E2DC69D6C007E6927 /* RockAppListingViewModel.swift */,
+			);
+			name = ViewModel;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		BA3234802DC6A64A007E6927 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA3234812DC6A667007E6927 /* RockAppListingService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BA3234832DC6A7C4007E6927 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA3234842DC6A7E9007E6927 /* RockAppListingApiResponse.swift */,
+				BA32348F2DC6B38A007E6927 /* RockTrackRequest.swift */,
+				BA90F0192DC80CA8002E803A /* RockAppState.swift */,
+				BA90F01B2DC8145B002E803A /* RockTrackScreenDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA3234862DC6AD1D007E6927 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BA3234872DC6AD45007E6927 /* NetworkManager.swift */,
+				BA32348D2DC6AFD4007E6927 /* NetworkError.swift */,
+				BA3234892DC6ADAD007E6927 /* Requests.swift */,
+				BA32348B2DC6AE41007E6927 /* Parser.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BA63FB972DCC1D1F003557BF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BA63FB982DCC1D45003557BF /* NetworkManagerMock.swift */,
+				BA9336342DCC0A4D00514381 /* RockTracks.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		BA63FB9A2DCC1E13003557BF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BA63FB9B2DCC1E6D003557BF /* RockAppListingServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BA63FB9D2DCC20DA003557BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA63FB9E2DCC20F2003557BF /* RockAppListingViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BA90F01D2DCAA687002E803A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BA90F01E2DCAA6A9002E803A /* DetailView */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BA90F01E2DCAA6A9002E803A /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				BA90F01F2DCAA6F2002E803A /* DetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		BA90F0212DCAA739002E803A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BA90F0222DCAA751002E803A /* DateFormatter+String.swift */,
+				BA93362B2DCC00AF00514381 /* StringFormat+Date.swift */,
+				BA90F0242DCAA9FB002E803A /* NumberFormatter+Double.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BA93362D2DCC044700514381 /* Utillities */ = {
+			isa = PBXGroup;
+			children = (
+				BA93362E2DCC049100514381 /* DateFormatTests.swift */,
+				BA9336302DCC06EF00514381 /* StringFormatTests.swift */,
+				BA9336322DCC097600514381 /* NumberFormatterTests.swift */,
+			);
+			path = Utillities;
+			sourceTree = "<group>";
+		};
+		BA9336362DCC0A9200514381 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BA9336372DCC0AD400514381 /* JsonReader.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BA93363B2DCC0B9800514381 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA93363C2DCC0BF700514381 /* RockTrackResponseTests.swift */,
+				BA9336402DCC145700514381 /* RockTrackRequestTests.swift */,
+				BA9336422DCC151400514381 /* RockTrackScreenDataModelTests.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9336352DCC0A4D00514381 /* RockTracks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +445,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3234512DC69A52007E6927 /* ContentView.swift in Sources */,
+				BA3234882DC6AD45007E6927 /* NetworkManager.swift in Sources */,
+				BA3234852DC6A7E9007E6927 /* RockAppListingApiResponse.swift in Sources */,
+				BA90F0252DCAA9FB002E803A /* NumberFormatter+Double.swift in Sources */,
+				BA3234512DC69A52007E6927 /* RockAppListingView.swift in Sources */,
+				BA32347F2DC69D6C007E6927 /* RockAppListingViewModel.swift in Sources */,
+				BA3234902DC6B38A007E6927 /* RockTrackRequest.swift in Sources */,
+				BA90F01A2DC80CA8002E803A /* RockAppState.swift in Sources */,
+				BA32348C2DC6AE41007E6927 /* Parser.swift in Sources */,
+				BA90F0202DCAA6F2002E803A /* DetailView.swift in Sources */,
 				BA32344F2DC69A52007E6927 /* RockTracksApp.swift in Sources */,
+				BA90F01C2DC8145B002E803A /* RockTrackScreenDataModel.swift in Sources */,
+				BA93362C2DCC00AF00514381 /* StringFormat+Date.swift in Sources */,
+				BA90F0232DCAA751002E803A /* DateFormatter+String.swift in Sources */,
+				BA32348E2DC6AFD4007E6927 /* NetworkError.swift in Sources */,
+				BA32348A2DC6ADAD007E6927 /* Requests.swift in Sources */,
+				BA3234822DC6A667007E6927 /* RockAppListingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +468,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3234612DC69A54007E6927 /* RockTracksTests.swift in Sources */,
+				BA63FB9C2DCC1E6D003557BF /* RockAppListingServiceTests.swift in Sources */,
+				BA93362F2DCC049100514381 /* DateFormatTests.swift in Sources */,
+				BA93363D2DCC0BF700514381 /* RockTrackResponseTests.swift in Sources */,
+				BA63FB992DCC1D45003557BF /* NetworkManagerMock.swift in Sources */,
+				BA9336382DCC0AD400514381 /* JsonReader.swift in Sources */,
+				BA9336432DCC151400514381 /* RockTrackScreenDataModelTests.swift in Sources */,
+				BA63FB9F2DCC20F2003557BF /* RockAppListingViewModelTests.swift in Sources */,
+				BA9336332DCC097600514381 /* NumberFormatterTests.swift in Sources */,
+				BA9336412DCC145700514381 /* RockTrackRequestTests.swift in Sources */,
+				BA9336312DCC06EF00514381 /* StringFormatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +558,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,6 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -432,7 +643,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.7;
@@ -440,7 +651,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = scottishpower.com.apple.RockTracks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,7 +680,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.7;
@@ -476,7 +688,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = scottishpower.com.apple.RockTracks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,13 +704,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 13.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = scottishpower.com.apple.RockTracksTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -513,13 +727,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MACOSX_DEPLOYMENT_TARGET = 13.7;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = scottishpower.com.apple.RockTracksTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
