@@ -42,10 +42,14 @@ extension RockAppListingViewModel {
         }
         let sortedTracks = results.sorted { $0.date ?? Date() > $1.date ?? Date() }
         let tracks: [RockTrackScreenDataModel] = sortedTracks.compactMap { .init(id: $0.trackId ?? 0,
-                                                                           trackName: $0.trackName,
-                                                                           artistName: $0.artistName,
-                                                                           price: $0.formattedTrackPrice,
-                                                                           image: $0.artworkUrl60)}
+                                                                                 trackName: $0.trackName,
+                                                                                 artistName: $0.artistName,
+                                                                                 price: $0.formattedTrackPrice,
+                                                                                 thumbnailLink: $0.artworkUrl30,
+                                                                                 bannerLink: $0.artworkUrl100,
+                                                                                 duration: $0.trackTimeMillis,
+                                                                                 releaseDate: $0.releaseDate, 
+                                                                                 trackViewUrl: $0.trackViewUrl)}
         self.tracks = tracks
     }
 }

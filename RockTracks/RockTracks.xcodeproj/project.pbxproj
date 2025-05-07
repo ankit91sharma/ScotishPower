@@ -27,6 +27,7 @@
 		BA90F0202DCAA6F2002E803A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F01F2DCAA6F2002E803A /* DetailView.swift */; };
 		BA90F0232DCAA751002E803A /* DateFormatter+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F0222DCAA751002E803A /* DateFormatter+String.swift */; };
 		BA90F0252DCAA9FB002E803A /* NumberFormatter+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90F0242DCAA9FB002E803A /* NumberFormatter+Double.swift */; };
+		BA93362C2DCC00AF00514381 /* StringFormat+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA93362B2DCC00AF00514381 /* StringFormat+Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		BA90F01F2DCAA6F2002E803A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		BA90F0222DCAA751002E803A /* DateFormatter+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+String.swift"; sourceTree = "<group>"; };
 		BA90F0242DCAA9FB002E803A /* NumberFormatter+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Double.swift"; sourceTree = "<group>"; };
+		BA93362B2DCC00AF00514381 /* StringFormat+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringFormat+Date.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				BA90F0222DCAA751002E803A /* DateFormatter+String.swift */,
+				BA93362B2DCC00AF00514381 /* StringFormat+Date.swift */,
 				BA90F0242DCAA9FB002E803A /* NumberFormatter+Double.swift */,
 			);
 			path = Utilities;
@@ -374,6 +377,7 @@
 				BA90F0202DCAA6F2002E803A /* DetailView.swift in Sources */,
 				BA32344F2DC69A52007E6927 /* RockTracksApp.swift in Sources */,
 				BA90F01C2DC8145B002E803A /* RockTrackScreenDataModel.swift in Sources */,
+				BA93362C2DCC00AF00514381 /* StringFormat+Date.swift in Sources */,
 				BA90F0232DCAA751002E803A /* DateFormatter+String.swift in Sources */,
 				BA32348E2DC6AFD4007E6927 /* NetworkError.swift in Sources */,
 				BA32348A2DC6ADAD007E6927 /* Requests.swift in Sources */,

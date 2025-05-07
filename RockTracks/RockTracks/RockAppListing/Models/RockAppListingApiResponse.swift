@@ -29,6 +29,8 @@ struct RockAppListingApiResponse: Codable {
         let artworkUrl60: String?
         let artworkUrl100: String?
         let releaseDate: String?
+        let trackTimeMillis: Int?
+        let trackViewUrl: String?
         
         var date: Date? {
             releaseDate?.getUTCDate()

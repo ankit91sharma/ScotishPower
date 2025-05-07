@@ -28,6 +28,7 @@ struct RockAppListingView: View {
             .navigationTitle(navigationTitle)
             .navigationBarTitleDisplayMode(.inline)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .task {
             await viewModel.fetchTracks()
         }
@@ -40,7 +41,7 @@ private extension RockAppListingView {
         List(viewModel.tracks) { track in
             ZStack {
                 HStack(spacing: 16) {
-                        AsyncImage(url: track.artworkURL) { item in
+                        AsyncImage(url: track.thumbnailURL) { item in
                             if let image = item.image {
                                 image
                                     .frame(width: 50, height: 50)
@@ -69,7 +70,7 @@ private extension RockAppListingView {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color.gray, lineWidth: 1)
                     })
-                NavigationLink(destination: DetailView()) { }
+                NavigationLink(destination: DetailView(detail: track)) { }
                     .opacity(0)
             }
             .listRowSeparator(.hidden)
@@ -82,3 +83,4 @@ private extension RockAppListingView {
         EmptyView()
     }
 }
+

@@ -9,6 +9,7 @@ import Foundation
 
 enum DateFormat: String {
     case longDateTimeZone = "yyyy-MM-dd'T'HH:mm:ssZ"
+    case shortDate = "d MMM yyyy"
 }
 
 extension String {
