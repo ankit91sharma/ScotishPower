@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct DetailView: View {
-    @Environment(\.presentationMode) var presentationMode
     
     let detail: RockTrackScreenDataModel
     
